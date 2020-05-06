@@ -10,14 +10,15 @@ const ExpenseListItem =({description,amount,createdAt,id})=>(
         <h3>{description}</h3>
         </Link>
         <p>
+        Rs-
     {
-        numeral(amount / 100).format('$0,0.00')
+        ( amount / 100)
     
     
     
     }
-        -
-        {moment(createdAt).format('MMMM Do, YYYY')}
+        ,
+        {moment(createdAt).format('MMMM Do YYYY')}
         </p>
         
         
